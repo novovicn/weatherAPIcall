@@ -1,0 +1,132 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body, html{
+    width:100%;
+    height: 100%;
+    background: url(Fall-1.jpg) no-repeat fixed;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+    
+    /* color: rgb(70, 173, 10);  */
+
+}
+
+#countries{
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    margin: 50px auto;
+    width:80%;
+}
+
+.countriesDiv{
+    height: 50px;
+    width:200px;
+    padding:10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    background-color: rgba(255,255,255,.85);
+    transition: all .5s;
+}
+
+.countriesDiv > a{
+    color: rgb(70, 173, 10);
+    text-transform: uppercase;
+}
+
+.countriesDiv:hover, .state:hover{
+    background-color: rgba(255,255,255, 1);
+    font-size: 1.25rem;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+body > h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2rem;
+    color: rgb(70, 173, 10);
+    background-color: rgba(255,255,255,.85);
+
+}
+
+#states{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+#statesPage > h1, #citiesPage > h1{
+    background-color: rgba(255,255,255,.85);
+    color: rgb(70, 173, 10);
+}
+
+.state, .city{
+    color: red;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.85);
+    margin: 10px;
+    border-radius: 5px;
+    transition: all .5s;
+
+}
+
+.state a, .city a{
+    color:  rgb(70, 173, 10);
+    
+}
+
+.cityInfoTables{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.table{
+    width: 35%;
+    border: none;
+    background-color: rgba(255,255,255,.85);
+    margin-top: 100px;
+    padding: 5px;
+    height: 40%;
+    border-radius: 15px;
+}
+
+.table td{
+    padding: 25px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: rgb(70, 173, 10);
+}
+
+#home{
+    text-decoration: none;
+    background-color: rgba(255,255,255,.8);
+    color: orange;
+    padding: 10px 30px;
+    height: 200px;
+    width: 50px;
+    margin:20px;
+    border-radius: 5px;
+}
